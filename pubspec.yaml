@@ -1,0 +1,120 @@
+name: shopping_go
+description: JZ_OSC_IntLGo
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  city_pickers: ^0.2.0
+  cupertino_icons: ^1.0.2
+  flutter_swiper: ^1.1.6
+  flutter_screenutil: ^0.5.3
+  dio: ^4.0.0
+  shared_preferences: ^0.5.3+1
+  flutter_inappbrowser: ^1.2.1
+  provider: ^5.0.0
+  event_bus: ^1.1.0
+  fluttertoast: ^3.1.0
+  crypto: ^2.1.1
+  starflut: ^1.0.0
+  boolean_selector: ^2.1.0
+  permission_handler: ^5.0.1+1
+
+  flutter_flux: ^4.1.3                       #状态管理，数据流
+  sqflite: ^1.1.7+1                          #android本地数据库
+  sticky_headers: ^0.1.8                     #粘性头部
+  flutter_spinkit: ^4.1.0                    #一个loading插件
+  audioplayers: ^0.13.5                      #播放音乐的
+  package_info: ^0.4.0+13                    #获取app信息的
+  url_launcher: ^5.4.1                       #打开url
+  webview_flutter: ^0.3.18+1                 #支持显示web页面
+  encrypt: ^4.0.0                            #解密
+  path_provider: ^1.4.0                      #访问本机文件
+  marquee: ^1.3.1                            #轮播
+  flutter_audio_query: ^0.3.2                #本地多媒体文件
+
+  ar_rtm:
+    git:
+      url: https://github.com/anyRTC/Flutter-RTM.git
+      ref: master
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/user_bg.jpg
+    - images/2.0x/user_bg.jpg
+    - images/3.0x/user_bg.jpg
+    - images/user.png
+    - images/2.0x/user.png
+    - images/3.0x/user.png
+    - images/login.png
+    - images/2.0x/login.png
+    - images/3.0x/login.png
+    - images/shopping.jpg
+    - images/2.0x/shopping.jpg
+    - images/3.0x/shopping.jpg
+    - images/tuzi.jpg
+    - images/2.0x/tuzi.jpg
+    - images/3.0x/tuzi.jpg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
